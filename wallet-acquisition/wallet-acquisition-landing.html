@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BM Wallet 拉新活动落地页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./wallet-acquisition-landing.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="lang-toggle language-tabs" role="group" aria-label="语言切换">
+        <button type="button" data-lang="zh" class="is-active" aria-pressed="true">中</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main class="landing-page" aria-label="BM Wallet 拉新活动落地页">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">BM Wallet 新用户专享福利</p>
+        <h1 id="page-title">完成任务，每日抽 <span>100 USDT</span></h1>
+        <p class="hero-subtitle">
+          完成推特互动，创建或绑定钱包并存入 ≥ $100 等值资产，验证通过后自动进入当天抽奖池。
+        </p>
+
+        <div class="activity-strip">
+          <div>
+            <h2>完成 4 步，自动入池</h2>
+            <p>X 互动 → 绑定 / 创建钱包 → 资产沉淀 → 校验钱包地址和余额。</p>
+          </div>
+          <a class="btn-web3 btn-web3--primary btn-web3--l" href="#join">开始报名</a>
+        </div>
+      </section>
+
+      <section class="content-section join-section" id="join" aria-labelledby="join-title">
+        <div class="section-heading">
+          <h2 id="join-title">报名并验证钱包资产</h2>
+        </div>
+
+        <div class="join-layout">
+          <section class="panel signup-panel" aria-labelledby="signup-title">
+            <div class="panel-heading">
+              <h3 id="signup-title">填写参与信息</h3>
+            </div>
+
+            <form class="signup-form" novalidate>
+              <label class="field">
+                <span>X / 推特账号</span>
+                <input type="text" name="xAccount" placeholder="@yourhandle" autocomplete="off" />
+              </label>
+              <label class="field">
+                <span>钱包地址</span>
+                <input
+                  type="text"
+                  name="walletAddress"
+                  placeholder="0x... 或 Solana 钱包地址"
+                  autocomplete="off"
+                />
+              </label>
+
+              <label class="check-row">
+                <input type="checkbox" name="terms" />
+                <span>我已阅读并同意活动规则与风险提示</span>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn-web3 btn-web3--primary btn-web3--l form-submit" type="submit">
+                  验证并加入今日抽奖池
+                </button>
+                <a class="btn-text-web3 wallet-link" href="#">创建或导入钱包</a>
+              </div>
+            </form>
+
+            <div class="validation-result" data-state="idle" role="status" aria-live="polite" hidden>
+              <div class="result-icon" aria-hidden="true">i</div>
+              <div>
+                <h3>等待验证</h3>
+                <p>提交后将校验钱包地址格式与钱包余额。</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel pool-panel" id="pool" aria-labelledby="pool-title">
+            <div class="panel-heading">
+              <h3 id="pool-title">今日奖池</h3>
+              <span>每日一名链上发放</span>
+            </div>
+
+            <div class="pool-stats">
+              <div>
+                <span>距次日 12:00 开奖</span>
+                <strong class="tabular-nums">12:00:00</strong>
+              </div>
+              <div>
+                <span>当前入池人数</span>
+                <strong class="tabular-nums">3,182</strong>
+              </div>
+            </div>
+
+            <div class="winner-table">
+              <div class="table-row table-head">
+                <span>日期</span>
+                <span>中奖地址</span>
+                <span>奖励</span>
+              </div>
+              <div class="table-row">
+                <span>06-24</span>
+                <strong class="tabular-nums">0x7a3f...9bC2</strong>
+                <em>100 USDT</em>
+              </div>
+              <div class="table-row">
+                <span>06-23</span>
+                <strong class="tabular-nums">0x12dE...44Aa</strong>
+                <em>100 USDT</em>
+              </div>
+              <div class="table-row">
+                <span>06-22</span>
+                <strong class="tabular-nums">0x9Fb0...1c7D</strong>
+                <em>100 USDT</em>
+              </div>
+              <div class="table-row">
+                <span>06-21</span>
+                <strong class="tabular-nums">0x55Ac...E0f1</strong>
+                <em>100 USDT</em>
+              </div>
+              <div class="table-row">
+                <span>06-20</span>
+                <strong class="tabular-nums">0x3Bd8...7aF9</strong>
+                <em>100 USDT</em>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="content-section process-section" aria-labelledby="process-title">
+        <div class="section-heading">
+          <h2 id="process-title">四步完成参与</h2>
+        </div>
+        <div class="process-list">
+          <article>
+            <span>01</span>
+            <h3>X 互动</h3>
+            <p>点赞并转发指定活动推文。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>绑定 / 创建钱包</h3>
+            <p>填写钱包地址，或前往创建钱包。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>资产沉淀</h3>
+            <p>存入 ≥ $100 等值资产。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>验证入池</h3>
+            <p>校验钱包地址和余额后进入当天奖池。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section rules-section" id="rules" aria-labelledby="rules-title">
+        <div class="section-heading section-heading--center">
+          <h2 id="rules-title">常见问题</h2>
+        </div>
+
+        <div class="rule-list">
+          <details open>
+            <summary>未中奖用户次日是否需要重新互动？</summary>
+            <p>不需要。同一推文互动可以复用，未中奖用户次日只需在开奖时仍满足钱包余额门槛。</p>
+          </details>
+          <details>
+            <summary>钱包余额什么时候校验？</summary>
+            <p>提交报名时校验一次，开奖时再次校验；开奖前撤资导致余额低于 $100 视为自动放弃。</p>
+          </details>
+          <details>
+            <summary>支持哪些资产？</summary>
+            <p>当前页面先按 USDT、USDC、ETH 设计，最终支持资产和计价口径以上线配置为准。</p>
+          </details>
+          <details>
+            <summary>如何避免重复参与？</summary>
+            <p>每个推特账号、钱包地址、设备指纹仅计一个有效参与名额，异常参与会被风控排除。</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" data-toast="hidden" role="status" aria-live="polite"></div>
+
+    <script src="./wallet-acquisition-landing.js"></script>
+  </body>
+</html>
